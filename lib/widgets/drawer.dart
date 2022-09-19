@@ -8,6 +8,7 @@ class SideMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: active,
       child: Container(
         color: active,
         padding: const EdgeInsets.all(16),
@@ -15,6 +16,9 @@ class SideMenu extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const SizedBox(
+              height: 30,
+            ),
             InkWell(
               onTap: () {},
               child: Text(
